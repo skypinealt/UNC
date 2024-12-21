@@ -644,7 +644,7 @@ runTest("request", {"http.request", "http_request"}, function()
         Method = "GET",
     })
     assert(type(response) == "table", "Response must be a table")
-    assert(response.StatusCode == 400, "Did not return a 400 status code")
+    assert(response.StatusCode == 200, "Did not return a 200 status code")
     local data = game:GetService("HttpService"):JSONDecode(response.Body)
     assert(type(data) == "table" and type(data["user-agent"]) == "string", "Did not return a table with a user-agent key")
     return "User-Agent: " .. data["user-agent"]
