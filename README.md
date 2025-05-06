@@ -74,7 +74,7 @@
 - [ ] `getscriptclosure`
 - [ ] `getscripthash`
 - [x] `getscripts`
-- [x] `getsenv`
+- [ ] `getsenv`
 - [x] `loadstring`
 
 ## Signals
